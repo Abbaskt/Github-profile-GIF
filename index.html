@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Readme</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="particles-js">
+        <div id="typewriter"></div></br>
+        <div id="typewriter2"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'particles.json', function() {
+            console.log('callback - particles.js config loaded');
+        });
+        const instance1 = new Typewriter('#typewriter', {
+            loop: true
+        });
+        const instance2 = new Typewriter('#typewriter2', {
+            loop: true
+        });
+
+        instance1.changeDelay(100)
+        .typeString("Welcome to Your-name's Github!")
+        .pauseFor(1000)
+        .deleteAll()
+        .typeString("Your qualification.")
+        .pauseFor(1200)
+        .deleteAll()
+        .pauseFor(1000)
+        .start();
+
+        instance2.pauseFor(1000)
+        .typeString("Nice to see you!")
+        .pauseFor(1500)
+        .deleteAll()
+        .changeDelay(60)
+        .typeString("Any extra information.")
+        .pauseFor(1000)
+        .deleteAll()
+        .pauseFor(1000)
+        .start();
+    </script>
+</body>
+</html>

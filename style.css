@@ -1,0 +1,26 @@
+#particles-js {
+    background-color: black;
+    height: 860px;
+    width: 100%;
+}
+#typewriter {
+    position: absolute;
+    font-size: 55px;
+    font-family: 'B612', sans-serif;
+    font-weight: 600;
+    width: 900px;
+    color: whitesmoke;
+    text-align: center;
+    margin: 200px 200px;
+}
+
+#typewriter2 {
+    position: absolute;
+    font-size: 35px;
+    font-family: 'B612', sans-serif;
+    font-weight: 500;
+    width: 900px;
+    color: whitesmoke;
+    text-align: center;
+    margin: 300px 200px;
+}
